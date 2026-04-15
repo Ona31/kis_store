@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root{
+    --bg-pr:#fbfbfb;
+    --pr:#4f25cf;
+    --sec:#d8d8f0;
+    --acc:#c4c4c4;
+    --text:#181818;
+    --text-acc:#404040;
+    --nor:#ffffff;
+    --shadow: rgba(0,0,0,0.1);
+}
+
+
+
+body{
+    background-color: var(--bg-pr);
+}
