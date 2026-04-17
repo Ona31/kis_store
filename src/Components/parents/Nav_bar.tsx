@@ -5,20 +5,12 @@ import { CgShoppingBag } from "react-icons/cg";
 //-----------------------------
 
 import Btn from "../child/Btn"
+import Menu from "../child/Menu";
 
 
 export default function  NavComponent(){
      // La liste des naviagtions
-     const naveList = [
-        {nav:"Home", lien:"#Home",icon:""},
-        {nav:"About", lien:"#About",icon:""},
-        {nav:"Services", lien:"#Services",icon:""},
-        {nav:"Location/Contact", lien:"#LoC",icon:""},
-        {nav:"Game Produit", lien:"",icon:<GiCubeforce />},
-        {nav:"Store", lien:"",icon:<IoMdAppstore />},
-       
-        
-     ]
+  
 
      
 
@@ -26,16 +18,7 @@ export default function  NavComponent(){
        <>
        <header className=" flex z-10 justify-between fixed w-full py-2 px-24 bg-[var(--nor)] shadow-sm items-center">
          <div className="flex"> <h1 className="text-2xl font-bold  text-[var(--text)]"> <span className="text-[var(--pr)]">YKIS</span> store</h1></div>
-        <nav className="flex ">
-         <ul className="flex gap-8">
- {naveList.map((nav,index) =>(
-        
-            <li  key={index}><a className=" flex items-center gap-2 text-[var(--text)]  text-md" href={nav.lien}>{nav.nav}{nav.icon}</a></li>
-      
-       ))}
-         </ul>
-          
-       </nav> 
+        <Menu style={"flex gap-8"}/>
        <div className="flex items-center gap-4">
         <CgShoppingBag className="text-2xl" />
         

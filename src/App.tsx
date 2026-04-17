@@ -7,6 +7,7 @@
 //la fonction principale
 //-----------------------------------------------------
 
+import Footer from "./Components/parents/Footer";
 import NavComponent from "./Components/parents/Nav_bar";
 import HomePage from "./pages/HomePage";
 
@@ -16,6 +17,7 @@ function App(){
     <>
      <NavComponent />
      <HomePage/>
+     <Footer/>
     </>
     
   )
