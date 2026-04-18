@@ -9,7 +9,7 @@
 
 import Footer from "./Components/parents/Footer";
 import NavComponent from "./Components/parents/Nav_bar";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/Home/HomePage";
 
 
 function App(){

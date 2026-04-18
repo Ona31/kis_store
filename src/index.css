@@ -12,10 +12,16 @@
     --shadow: rgb(233, 228, 228);
 }
 
-
+::-webkit-scrollbar{
+    display: none;
+}
+.deg{
+    background: linear-gradient(45deg,var(--ft), var(--pr));
+}
 
 body{
     background-color: var(--bg-pr);
+  
 }
 
 .shadow-c{

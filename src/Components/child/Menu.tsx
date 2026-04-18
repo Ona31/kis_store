@@ -3,10 +3,11 @@ import { IoMdAppstore } from "react-icons/io"
 
 type Props ={
     style:string,
+    stylea:string
 }
 
 
-export default function Menu({style}:Props){
+export default function Menu({style,stylea}:Props){
        const naveList = [
         {nav:"Home", lien:"#Home",icon:""},
         {nav:"About", lien:"#About",icon:""},
@@ -22,7 +23,7 @@ export default function Menu({style}:Props){
                  <ul className={style}>
          {naveList.map((nav,index) =>(
                 
-                    <li  key={index}><a className=" flex items-center gap-2 text-[var(--text)]  text-md" href={nav.lien}>{nav.nav}{nav.icon}</a></li>
+                    <li  key={index}><a className={stylea} href={nav.lien}>{nav.nav}{nav.icon}</a></li>
               
                ))}
                  </ul>
